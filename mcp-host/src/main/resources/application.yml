@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: mcp-host
+
+  ai:
+    mcp.client:
+      sse.connections:
+        geocoder-mcp-server:
+          url: http://localhost:8081
+        timezone-mcp-server:
+          url: http://localhost:8082
+
+    ollama:
+      init:
+        pull-model-strategy: when_missing
+      embedding:
+        enabled: false
+      chat:
+        enabled: true
+        url: http://127.0.0.1:11434
+        options:
+          model: llama3.2
+          temperature: 0.7

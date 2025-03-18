@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+spring:
+  ai:
+    mcp:
+      server:
+        name: timezone-mcp-server
+        version: 1.0.0
+
+logging:
+  level:
+    es.omarall: DEBUG
+    org.springframework.ai: DEBUG
